@@ -1,0 +1,60 @@
+2023-11-06T15:55:57.62395600255-15:55:57 **** Incremental Build of configuration Debug for project Bare_Metal_Test ****
+000-make all 
+000-Building file: ../src/helloworld.c
+000-Invoking: ARM v8 gcc compiler
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/home/magnus/workspace/u96v2_sbc_mp4d/export/u96v2_sbc_mp4d/sw/u96v2_sbc_mp4d/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'main':
+000/Bare_Metal_Test/src/helloworld.c75-1-1implicit declaration of function 'saveImage' [-Wimplicit-function-declaration]1-../src/helloworld.c:75:2: warning: implicit declaration of function 'saveImage' [-Wimplicit-function-declaration]
+000-   75 |  saveImage();
+000-      |  ^~~~~~~~~
+000/Bare_Metal_Test/src/helloworld.c79-1-1implicit declaration of function 'readImage' [-Wimplicit-function-declaration]1-../src/helloworld.c:79:2: warning: implicit declaration of function 'readImage' [-Wimplicit-function-declaration]
+000-   79 |  readImage();
+000-      |  ^~~~~~~~~
+000-../src/helloworld.c: At top level:
+000/Bare_Metal_Test/src/helloworld.c86-1-1conflicting types for 'readImage'1readImage../src/helloworld.c:86:6: warning: conflicting types for 'readImage'
+000-   86 | void readImage(){
+000-      |      ^~~~~~~~~
+000/Bare_Metal_Test/src/helloworld.c79-1-1previous implicit declaration of 'readImage' was here0-../src/helloworld.c:79:2: note: previous implicit declaration of 'readImage' was here
+000-   79 |  readImage();
+000-      |  ^~~~~~~~~
+000-../src/helloworld.c: In function 'readImage':
+000/Bare_Metal_Test/src/helloworld.c91-1-1implicit declaration of function 'Read_data' [-Wimplicit-function-declaration]1-../src/helloworld.c:91:10: warning: implicit declaration of function 'Read_data' [-Wimplicit-function-declaration]
+000-   91 |   data = Read_data(current_address);
+000-      |          ^~~~~~~~~
+000-../src/helloworld.c: At top level:
+000/Bare_Metal_Test/src/helloworld.c99-1-1conflicting types for 'saveImage'1saveImage../src/helloworld.c:99:6: warning: conflicting types for 'saveImage'
+000-   99 | void saveImage(){
+000-      |      ^~~~~~~~~
+000/Bare_Metal_Test/src/helloworld.c75-1-1previous implicit declaration of 'saveImage' was here0-../src/helloworld.c:75:2: note: previous implicit declaration of 'saveImage' was here
+000-   75 |  saveImage();
+000-      |  ^~~~~~~~~
+000-../src/helloworld.c: In function 'saveImage':
+000/Bare_Metal_Test/src/helloworld.c105-1-1implicit declaration of function 'Send_data' [-Wimplicit-function-declaration]1-../src/helloworld.c:105:3: warning: implicit declaration of function 'Send_data' [-Wimplicit-function-declaration]
+000-  105 |   Send_data(current_address, raw_pixel_data[i]);
+000-      |   ^~~~~~~~~
+000/Bare_Metal_Test/src/helloworld.c100-1-1unused variable 'last_address' [-Wunused-variable]1-../src/helloworld.c:100:37: warning: unused variable 'last_address' [-Wunused-variable]
+000-  100 |  UINTPTR current_address=0xa0000008,last_address;
+000-      |                                     ^~~~~~~~~~~~
+000-../src/helloworld.c: At top level:
+000/Bare_Metal_Test/src/helloworld.c115-1-1conflicting types for 'Send_data'1Send_data../src/helloworld.c:115:6: warning: conflicting types for 'Send_data'
+000-  115 | void Send_data(UINTPTR addr, u32 data){
+000-      |      ^~~~~~~~~
+000/Bare_Metal_Test/src/helloworld.c105-1-1previous implicit declaration of 'Send_data' was here0-../src/helloworld.c:105:3: note: previous implicit declaration of 'Send_data' was here
+000-  105 |   Send_data(current_address, raw_pixel_data[i]);
+000-      |   ^~~~~~~~~
+000-Finished building: ../src/helloworld.c
+000- 
+000-Building target: Bare_Metal_Test.elf
+000-Invoking: ARM v8 gcc linker
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/magnus/workspace/u96v2_sbc_mp4d/export/u96v2_sbc_mp4d/sw/u96v2_sbc_mp4d/standalone_psu_cortexa53_0/bsplib/lib -o "Bare_Metal_Test.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: Bare_Metal_Test.elf
+000- 
+000-Invoking: ARM v8 Print Size
+000-aarch64-none-elf-size Bare_Metal_Test.elf  |tee "Bare_Metal_Test.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  34140	   6232	  20852	  61224	   ef28	Bare_Metal_Test.elf
+000-Finished building: Bare_Metal_Test.elf.size
+000- 
+00255-
+15:55:57 Build Finished (took 219ms)
+

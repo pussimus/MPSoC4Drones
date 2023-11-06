@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  6 10:28:43 2023
+# Process ID: 2384
+# Current directory: /home/michael/MPSoC4Drones
+# Command line: vivado ./hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xpr
+# Log file: /home/michael/MPSoC4Drones/vivado.log
+# Journal file: /home/michael/MPSoC4Drones/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ./hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xpr
+launch_simulation
+source u96v2_sbc_mp4d_wrapper.tcl
+update_compile_order -fileset sources_1
+open_bd_design {/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd}
+add_wave {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/clk}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/rst_n}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_data_in}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_data_out}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_wr_en}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/state}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/i}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/processed_data}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/threshold}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_data_end}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_current_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/gray}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_meta_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_meta_end_adress}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_data_start}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageReadyBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageProccessingBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageDoneBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageSizeStart}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageSizeStop}} 
+current_wave_config {Untitled 1}
+add_wave {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory}} 
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} -radix hex {0xFFFFFFFF 0ns}
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/clk} -radix hex {0 0ns} {1 4000ps} -repeat_every 8000ps
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[2]} -radix hex {0xF0f0f0f0 0ns}
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[1]} -radix hex {0x0000000c 0ns}
+run 1 ps
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+open_bd_design {/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd}
+update_module_reference u96v2_sbc_mp4d_ImageFilter_0_0
+close_sim
+generate_target Simulation [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd]
+export_ip_user_files -of_objects [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd] -directory /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.ip_user_files/sim_scripts -ip_user_files_dir /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.ip_user_files -ipstatic_source_dir /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/modelsim} {questa=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/questa} {ies=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/ies} {xcelium=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/xcelium} {vcs=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/vcs} {riviera=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source u96v2_sbc_mp4d_wrapper.tcl
+add_wave {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/clk}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/rst_n}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_data_in}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_data_out}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_wr_en}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/state}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/next_state}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/i}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/processed_data}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/threshold}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_data_end}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_current_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/gray}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_meta_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_meta_end_adress}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_data_start}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageReadyBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageProccessingBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageDoneBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageSizeStart}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageSizeStop}} 
+current_wave_config {Untitled 2}
+add_wave {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory}} 
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} -radix hex {0xFFFFFFFF 0ns}
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[1]} -radix hex {0x0c 0ns}
+run 1 ps
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[1]} -radix hex {0x0000000c 0ns}
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[2]} -radix hex {0xf0f0f0f0 0ns}
+run 1 ps
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 8 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[3]} -radix hex {0x00ff00ff 0ns}
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+remove_forces { {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[3]} }
+run 1 ps
+remove_forces { {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[3]} }
+run 1 ps
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+open_bd_design {/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd}
+update_module_reference u96v2_sbc_mp4d_ImageFilter_0_0
+close_sim
+generate_target Simulation [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd]
+export_ip_user_files -of_objects [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/bd/u96v2_sbc_mp4d/u96v2_sbc_mp4d.bd] -directory /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.ip_user_files/sim_scripts -ip_user_files_dir /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.ip_user_files -ipstatic_source_dir /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/modelsim} {questa=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/questa} {ies=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/ies} {xcelium=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/xcelium} {vcs=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/vcs} {riviera=/home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source u96v2_sbc_mp4d_wrapper.tcl
+add_wave {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/clk}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/rst_n}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_data_in}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_data_out}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/bram_wr_en}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/state}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/next_state}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/i}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/processed_data}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/threshold}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_data_end}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_current_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/gray}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/test}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_meta_address}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_meta_end_adress}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/image_data_start}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageReadyBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageProccessingBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageDoneBit}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageSizeStart}} {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/ImageFilter_0/U0/imageSizeStop}} 
+current_wave_config {Untitled 3}
+add_wave {{/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory}} 
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} -radix hex {0xffffffff 1ps}
+run 5 ps
+run 5 ps
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[1]} -radix hex {0x0000000c 1ps}
+run 5 ps
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[2]} -radix hex {0xff00ff00 1ps}
+run 5 ps
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[3]} -radix hex {0x00ff00ff 1ps}
+run 5 ps
+remove_forces { {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} }
+run 5 ps
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} -radix hex {0xffffffff 0ns}
+run 5 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+remove_forces { {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} }
+run 10 ps
+run 10 ns
+run 10 ns
+run 10 ns
+add_force {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[0]} -radix hex {0xffffffff 0ns}
+run 1 ps
+run 10 ns
+run 10 ns
+remove_forces { {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[2]} }
+run 1 ps
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+remove_forces { {/u96v2_sbc_mp4d_wrapper/u96v2_sbc_mp4d_i/axi_bram_ctrl_0_bram/inst/\native_mem_mapped_module.blk_mem_gen_v8_4_4_inst /memory[3]} }
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  6 12:01:59 2023
+# Process ID: 2397
+# Current directory: /home/michael/MPSoC4Drones
+# Command line: vivado ./hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xpr
+# Log file: /home/michael/MPSoC4Drones/vivado.log
+# Journal file: /home/michael/MPSoC4Drones/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ./hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse /home/michael/MPSoC4Drones/src/ImageFilter.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/imports/Downloads/ImageFilter.vhd] -no_script -reset -force -quiet
+remove_files  /home/michael/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.srcs/sources_1/imports/Downloads/ImageFilter.vhd
+update_module_reference u96v2_sbc_mp4d_ImageFilter_0_0
